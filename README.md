@@ -1,10 +1,9 @@
 # Klasifikasi Dropout dan Keberhasilan Akademik Mahasiswa dengan Machine Learning
 
-Halo, saya **Juan Luthfi Ryandi**, mahasiswa Teknik Informatika Universitas Pamulang. Selamat datang di repositori tugas praktikum machine learning saya! 
+Halo salam kenal, saya **Juan Luthfi Ryandi**, mahasiswa Teknik Informatika Universitas Pamulang.
 
 Di repositori ini saya membangun model untuk **memprediksi status akademik seorang mahasiswa**, apakah ia akan *Dropout*, masih *Enrolled* (aktif kuliah), atau *Graduate* (lulus), berdasarkan data pendaftaran, kondisi sosial-ekonomi, dan kinerja akademiknya di semester 1 dan 2. Seluruh prosesnya saya kerjakan dari nol sampai model jadi, mengikuti alur yang diajarkan dosen saya: mulai dari mengumpulkan data, membersihkan, menganalisis, membagi data, melatih model, sampai mengevaluasi dan menyimpannya.
 
-README ini saya tulis supaya siapa pun yang membuka repositori ini, bahkan yang belum pernah belajar machine learning, bisa paham **apa yang saya kerjakan dan kenapa setiap langkahnya perlu dilakukan**.
 
 ---
 
