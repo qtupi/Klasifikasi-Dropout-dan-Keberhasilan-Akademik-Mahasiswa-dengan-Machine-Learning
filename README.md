@@ -88,7 +88,7 @@ Sebagian besar fitur kategorikal sudah berbentuk **kode numerik** dari sumber da
 
 ## Proses yang saya kerjakan
 
-Berikut urutan yang saya kerjakan di notebook. Di setiap tahap saya jelaskan **apa yang dilakukan** dan **kenapa harus dilakukan**.
+Berikut urutan yang saya kerjakan pada Google Collab. Di setiap tahap saya jelaskan **apa yang dilakukan** dan **kenapa harus dilakukan**.
 
 ### 1. Data Collecting dan Data Loading
 
