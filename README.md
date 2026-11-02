@@ -273,9 +273,79 @@ Dataset **Predict Students' Dropout and Academic Success** diambil dari UCI Mach
 - **Lisensi:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode). Data boleh dibagikan dan diadaptasi untuk tujuan apa pun selama mencantumkan kredit.
 - **Makalah pengantar:** Martins, M. V., Tolledo, D., Machado, J., Baptista, L. M. T., & Realinho, V. (2021). *Early prediction of student's performance in higher education: a case study*. Trends and Applications in Information Systems and Technologies.
 
----
-
 Terima kasih sudah membaca!
 
 **Juan Luthfi Ryandi**
 Teknik Informatika, Universitas Pamulang
+
+
+
+**Landasan Teori: Metrik Evaluasi Regresi (MAE, MSE, dan R²)**
+
+Ringkasan landasan teori tiga metrik evaluasi model regresi: Mean Absolute Error (MAE), Mean Squared Error (MSE), dan Koefisien Determinasi (R²).
+
+**Daftar Isi
+2.1 Evaluasi Model Regresi
+2.2 Mean Absolute Error (MAE)
+2.3 Mean Squared Error (MSE)
+2.4 Koefisien Determinasi (R²)
+2.5 Ringkasan Interpretasi
+Daftar Pustaka**
+
+**2.1 Evaluasi Model Regresi**
+
+Pada model regresi berbasis machine learning, metrik kinerja dipakai untuk membandingkan hasil prediksi model dengan data aktual pada data uji. Makin besar selisih antara nilai sebenarnya dan nilai prediksi, makin jauh model dari representasi yang akurat; sebaliknya, makin dekat kedua nilai tersebut, makin baik kinerja modelnya. Metrik yang paling banyak dipakai untuk melaporkan kinerja model regresi adalah (root) mean squared error, mean absolute error, koefisien korelasi Pearson, dan koefisien determinasi (Plevris et al., 2022).
+
+Pada penelitian prediksi, hasil pengujian model berupa skor R², MSE, MAE, dan RMSE dalam bentuk nilai numerik (Puspitasari et al., 2023).
+
+**2.2 Mean Absolute Error (MAE)**
+
+MAE mengukur rata-rata besar kesalahan dalam sekumpulan prediksi tanpa memperhatikan arahnya. MAE dihitung sebagai rata-rata selisih absolut antara prediksi dan observasi aktual, dengan setiap selisih berbobot sama (Plevris et al., 2022).
+
+MAE termasuk ukuran yang banyak dipakai dalam evaluasi model, yaitu "another useful measure widely used in model evaluations" (Chai & Draxler, 2014).
+
+$$\mathrm{MAE} = \frac{1}{n} \sum_{i=1}^{n} \left| y_i - \hat{y}_i \right|$$
+
+dengan $y_i$ nilai aktual, $\hat{y}_i$ nilai prediksi, dan $n$ jumlah data (Hodson, 2022).
+
+**2.3 Mean Squared Error (MSE)**
+
+MSE adalah metrik regresi populer yang mengukur rata-rata kuadrat selisih antara nilai prediksi dan nilai aktual. Nilainya positif atau nol (Plevris et al., 2022).
+
+$$\mathrm{MSE} = \frac{1}{n} \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2$$
+
+dengan $y_i$ nilai aktual, $\hat{y}_i$ nilai prediksi, dan $n$ jumlah data (Chicco et al., 2021).
+
+MSE lebih sensitif terhadap outlier dibanding MAE, atau dalam kata penulisnya, "MSE is more sensitive to outliers than MAE" (Chicco et al., 2021). Nilainya berkisar dari nol sampai tak hingga, sehingga satu nilai MSE saja belum menunjukkan seberapa baik regresi terhadap sebaran data aktual (Chicco et al., 2021).
+
+Kelemahan utama MSE adalah tidak robust terhadap outlier: bila satu sampel punya galat jauh lebih besar, kuadrat galat itu akan makin besar dan mendominasi rata-rata (Plevris et al., 2022).
+
+MSE dan MAE merupakan bentuk rata-rata dari norma L2 dan norma L1, yaitu jarak Euclidean dan jarak Manhattan (Hodson, 2022).
+
+**2.4 Koefisien Determinasi (R²)**
+
+R² dapat dihitung dari jumlah kuadrat residual (RSS) dan jumlah kuadrat total (TSS), yaitu R² = 1 − RSS/TSS. R² juga dapat dihitung sebagai ESS/TSS, yaitu rasio variansi yang dijelaskan model terhadap variansi total. Karena itu, makin tinggi nilai R², makin berguna model linearnya (Plevris et al., 2022).
+
+$$R^2 = 1 - \frac{\sum_{t} \left( Y_t - X_t \right)^2}{\sum_{t} \left( Y_t - \bar{Y} \right)^2}$$
+
+Pada model linear, R² adalah kuadrat dari koefisien korelasi Pearson dan bernilai antara 0 dan 1 (0–100%) (Plevris et al., 2022).
+
+Pada model nonlinear, R² bisa bernilai negatif. Nilai negatif itu bukan kemustahilan matematis, melainkan berarti model yang dipilih sangat buruk dalam mencocokkan data (Plevris et al., 2022).
+
+Semakin tinggi nilai koefisien determinasi, semakin baik performa model; semakin kecil MSE, RMSE, dan MAPE, semakin baik pula modelnya (Puspitasari et al., 2023).
+
+Sebagai contoh penafsiran, R² = 0,992 berarti sekitar 99,2% variasi variabel respons dapat dijelaskan oleh variabel prediktor, dan sisanya sekitar 0,8% dipengaruhi faktor lain (Puspitasari et al., 2023).
+
+**2.5 Ringkasan Interpretasi**
+
+Metrik	Yang diukur	Kriteria model baik	Sumber
+MAE	Rata-rata galat absolut	Makin kecil makin baik	Plevris et al. (2022)
+MSE	Rata-rata galat kuadrat	Makin kecil / mendekati 0	Chicco et al. (2021)
+R²	Proporsi variansi yang dijelaskan model	Makin mendekati 1	Puspitasari et al. (2023)
+
+**Daftar Pustaka**
+Chai, T., & Draxler, R. R. (2014). Root mean square error (RMSE) or mean absolute error (MAE)? – Arguments against avoiding RMSE in the literature. Geoscientific Model Development, 7(3), 1247–1250.
+Chicco, D., Warrens, M. J., & Jurman, G. (2021). The coefficient of determination R-squared is more informative than SMAPE, MAE, MAPE, MSE and RMSE in regression analysis evaluation. PeerJ Computer Science, 7, e623.
+Hodson (2022). RMSE or MAE: When to use them or not. Geoscientific Model Development, 15(14).
+Plevris et al. (2022). Investigation of performance metrics in regression analysis and machine learning-based prediction models. ECCOMAS Congress 2022.
+Puspitasari et al. (2023). Pemodelan spasial untuk analisa produksi padi integrasi machine learning. Digital Zone, 14(2).
