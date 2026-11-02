@@ -338,10 +338,23 @@ Sebagai contoh penafsiran, R² = 0,992 berarti sekitar 99,2% variasi variabel re
 
 **2.5 Ringkasan Interpretasi**
 
-Metrik	Yang diukur	Kriteria model baik	Sumber
-MAE	Rata-rata galat absolut	Makin kecil makin baik	Plevris et al. (2022)
-MSE	Rata-rata galat kuadrat	Makin kecil / mendekati 0	Chicco et al. (2021)
-R²	Proporsi variansi yang dijelaskan model	Makin mendekati 1	Puspitasari et al. (2023)
+MAE
+
+Yang diukur: rata-rata galat absolut
+Model baik jika: makin kecil makin baik
+Sumber: Plevris et al. (2022)
+
+MSE
+
+Yang diukur: rata-rata galat kuadrat
+Model baik jika: makin kecil, mendekati 0
+Sumber: Chicco et al. (2021)
+
+R²
+
+Yang diukur: proporsi variansi yang dijelaskan model
+Model baik jika: makin mendekati 1
+Sumber: Puspitasari et al. (2023)
 
 **Daftar Pustaka**
 Chai, T., & Draxler, R. R. (2014). Root mean square error (RMSE) or mean absolute error (MAE)? – Arguments against avoiding RMSE in the literature. Geoscientific Model Development, 7(3), 1247–1250.
